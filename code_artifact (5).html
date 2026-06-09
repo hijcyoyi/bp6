@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黃翊珍 | 履歷表</title>
+    <style>
+        :root {
+            --cream-bg: #fcf9f5;
+            --soft-white: #ffffff;
+            --deep-brown: #3d352e;
+            --accent-gold: #c5a075;
+            --text-grey: #5c554d;
+            --card-shadow: 0 8px 24px rgba(0,0,0,0.04);
+            --border-color: #eee9e0;
+        }
+        body { background-color: var(--cream-bg); color: var(--deep-brown); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', "PingFang TC", "Microsoft JhengHei", serif; padding: 40px 20px; line-height: 1.8; margin: 0; }
+        .nav-menu { position: fixed; top: 30px; right: 30px; display: flex; gap: 20px; font-family: sans-serif; font-size: 0.85rem; z-index: 1000; font-weight: 500; }
+        .nav-menu a { text-decoration: none; color: var(--text-grey); transition: 0.3s; padding: 5px 10px; border-radius: 20px; }
+        .nav-menu a:hover { color: var(--soft-white); background: var(--accent-gold); }
+        .container { max-width: 850px; margin: 0 auto; }
+        
+        /* 頁首聯絡資訊 */
+        header { text-align: center; margin-bottom: 50px; }
+        h1 { font-size: 2.8rem; font-weight: 700; letter-spacing: 2px; margin-bottom: 5px; color: var(--deep-brown); }
+        .tagline { color: var(--text-grey); letter-spacing: 2px; margin-bottom: 20px; font-weight: bold; font-size: 1.1rem; }
+        .contact-info { margin-bottom: 30px; font-size: 0.95rem; color: var(--text-grey); font-family: sans-serif; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
+        .contact-info span { display: inline-flex; align-items: center; background: var(--soft-white); padding: 5px 15px; border-radius: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); border: 1px solid var(--border-color); }
+        
+        section { margin-bottom: 50px; }
+        h2 { font-size: 1.3rem; margin-bottom: 25px; border-bottom: 2px solid var(--accent-gold); display: inline-block; padding-bottom: 4px; color: var(--deep-brown); font-weight: 700; }
+        .card { background: var(--soft-white); padding: 35px; border-radius: 8px; box-shadow: var(--card-shadow); margin-bottom: 20px; border: 1px solid var(--border-color); }
+        
+        /* 清單與時間軸樣式 */
+        .feature-list { list-style: none; margin: 10px 0; padding: 0; }
+        .feature-list li { margin-bottom: 12px; padding-left: 18px; position: relative; font-size: 1rem; text-align: justify; color: var(--text-grey); }
+        .feature-list li::before { content: "•"; position: absolute; left: 0; color: var(--accent-gold); font-weight: bold; font-size: 1.2rem; }
+        
+        .timeline-item { position: relative; padding-left: 25px; border-left: 2px solid var(--accent-gold); margin-bottom: 30px; }
+        .timeline-item:last-child { margin-bottom: 0; }
+        .timeline-item::before { content: ""; position: absolute; left: -6px; top: 5px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent-gold); }
+        .timeline-title { font-weight: bold; color: var(--deep-brown); font-size: 1.1rem; }
+        .timeline-subtitle { font-size: 0.95rem; color: var(--text-grey); margin-bottom: 10px; font-family: sans-serif; }
+        
+        /* 證照網格設計 */
+        .img-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
+        .cert-item { background: var(--cream-bg); padding: 10px; border-radius: 8px; border: 1px solid var(--border-color); transition: transform 0.3s; }
+        .cert-item:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .cert-item img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 4px; }
+        .cert-name { font-size: 0.85rem; text-align: center; margin-top: 10px; font-family: sans-serif; font-weight: 600; color: var(--deep-brown); line-height: 1.3; }
+        .cert-name span { display: block; font-size: 0.75rem; font-weight: normal; color: var(--text-grey); margin-top: 3px; }
+        
+        .about-text { color: var(--text-grey); font-size: 1rem; text-align: justify; line-height: 2; text-indent: 2em; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+
+    <nav class="nav-menu">
+        <a href="#skills">電腦技能</a>
+        <a href="#experience">學歷與經歷</a>
+        <a href="#about">個人自傳</a>
+        <a href="#certs">專業證照</a>
+        <a href="#works">數位專案</a>
+    </nav>
+
+<div class="container">
+    <header>
+        <h1>黃翊珍</h1>
+        <p class="tagline">應徵職務：工程助理 / 工務行政 / 行政助理</p>
+        <div class="contact-info">
+            <span>📍 桃園市八德區新興路</span>
+            <span>📱 0916-921-969</span>
+            <span>✉️ b0916921969@gmail.com</span>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. 電腦技能 -->
+        <section id="skills">
+            <h2>電腦技能</h2>
+            <div class="card">
+                <ul class="feature-list">
+                    <li><strong>辦公軟體應用：</strong>熟悉 Microsoft Word、Excel、PowerPoint，具備文件製作、報表整理、資料分析及簡報設計能力。</li>
+                    <li><strong>Excel 資料分析：</strong>熟悉函數運用、資料排序、篩選、樞紐分析及資料整理，可協助行政報表與數據管理作業。</li>
+                    <li><strong>數據視覺化：</strong>具備 Power BI 基礎應用能力，可建立資料分析儀表板與視覺化圖表。</li>
+                    <li><strong>AI 工具應用：</strong>熟悉 Gemini、Google AI Studio、ChatGPT 等生成式 AI 工具，可運用於日常文書處理以提升工作效率。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 2. 學歷與工作經歷 -->
+        <section id="experience">
+            <h2>學歷與工作經歷</h2>
+            <div class="card">
+                <div class="timeline-item">
+                    <div class="timeline-title">電子工程系 學士</div>
+                    <div class="timeline-subtitle">龍華科技大學 | 2023.09 - 2025.06</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">自由工作者</div>
+                    <div class="timeline-subtitle">個體配送 / 外送平台服務</div>
+                    <ul class="feature-list" style="margin-top: 5px;">
+                        <li>因家庭照護需求選擇彈性工作，期間自行安排工作時程、規劃路線並處理突發狀況，培養出良好的自我管理與時間管理能力。</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">電子廠作業員 / 品檢員</div>
+                    <div class="timeline-subtitle">人力派遣</div>
+                    <ul class="feature-list" style="margin-top: 5px;">
+                        <li>參與產品組裝、品質檢驗及產線相關作業，快速適應不同工作環境並配合產線需求。</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">產線作業員 (產學合作)</div>
+                    <div class="timeline-subtitle">宏達國際電子 (HTC) | 2011.08 - 2015.12</div>
+                    <ul class="feature-list" style="margin-top: 5px;">
+                        <li>累積逾四年科技廠製造業實務經驗，熟悉並落實標準作業程序（SOP）、品質管理。</li>
+                        <li>建立嚴格遵守廠區工安規範與穩定完成工作的習慣。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 個人自傳 -->
+        <section id="about">
+            <h2>個人自傳</h2>
+            <div class="card">
+                <p class="about-text">
+                    我的人生歷程並非一路按照原定規劃前進。2015年底因家庭因素離開宏達國際電子，調整原有的學業與職涯規劃，將重心放在家庭照護與工作之間的平衡。這段經歷雖然讓我的發展方向與一般人有所不同，但也讓我更早體會責任的重要性，並學習在不同環境中持續尋找未來的方向。
+                </p>
+                <p class="about-text">
+                    我在學生時期透過產學合作進入宏達國際電子（HTC）擔任作業員，自 2011 年 8 月至 2015 年 12 月累積超過四年的製造業工作經驗。在工作中學習標準作業程序（SOP）、品質管理及團隊合作的重要性，也建立遵守規範與穩定完成工作的習慣。
+                </p>
+                <p class="about-text">
+                    後續因家庭照護需求，在兼顧家庭責任期間曾透過人力派遣公司進入電子產業工作，參與產品組裝、品質檢驗及產線相關作業，持續累積製造業現場實務經驗。雖然工作型態以派遣為主，但也讓我學習配合產線需求及快速適應不同工作環境。為兼顧家庭照護需求與工作彈性，後續先從事個體配送工作，之後投入外送平台服務作為主要收入來源。長期自主工作的過程中，培養出時間管理、自我管理及問題處理能力。
+                </p>
+                <p class="about-text">
+                    在家庭照護期間，我始終沒有放棄進修與學習。為提升未來職涯發展機會，我重返校園取得龍華科技大學電子工程學士學位，並參加數位辦公與 AI 應用培訓班，精進各項文書軟體與數位工具應用。期望能將過去累積的實務經驗與責任心，投入工程行政與助理相關職務，為團隊帶來穩定的支援與貢獻。
+                </p>
+            </div>
+        </section>
+
+        <!-- 4. 專業證照展示 -->
+        <section id="certs">
+            <h2>專業證照展示</h2>
+            <div class="card">
+                <div class="img-grid">
+                    <!-- MOS 系列 -->
+                    <div class="cert-item">
+                        <img src="images/MOS-EXCEL.jpg" alt="Excel Expert" onerror="this.src='https://placehold.co/400x300/f3efe9/c5a075?text=Excel+Expert'">
+                        <div class="cert-name">Microsoft Excel Expert<span>Microsoft 365 Apps (專家級)</span></div>
+                    </div>
+                    <div class="cert-item">
+                        <img src="images/MOS-WORD.jpg" alt="Word Expert" onerror="this.src='https://placehold.co/400x300/f3efe9/c5a075?text=Word+Expert'">
+                        <div class="cert-name">Microsoft Word Expert<span>Microsoft 365 Apps (專家級)</span></div>
+                    </div>
+                    <div class="cert-item">
+                        <img src="images/MOS-PowerPoint.jpg" alt="PowerPoint" onerror="this.src='https://placehold.co/400x300/f3efe9/c5a075?text=PowerPoint'">
+                        <div class="cert-name">Microsoft PowerPoint<span>Microsoft 365 Apps</span></div>
+                    </div>
+                    
+                    <!-- Gemini AI 認證系列 -->
+                    <div class="cert-item">
+                        <img src="images/Gemini 認證大學生.jpg" alt="Gemini Student" onerror="this.src='https://placehold.co/400x300/fdfaf6/3d352e?text=Gemini+Student'">
+                        <div class="cert-name">Gemini University Certification<span>Google 認證大學生</span></div>
+                    </div>
+                    <div class="cert-item">
+                        <img src="images/Gemini 認證教師.jpg" alt="Gemini Educator" onerror="this.src='https://placehold.co/400x300/fdfaf6/3d352e?text=Gemini+Educator'">
+                        <div class="cert-name">Gemini Certification Educator<span>Google 認證教師</span></div>
+                    </div>
+                    <div class="cert-item">
+                        <img src="images/Gemini 認證教職員.jpg" alt="Gemini Faculty" onerror="this.src='https://placehold.co/400x300/fdfaf6/3d352e?text=Gemini+Faculty'">
+                        <div class="cert-name">Gemini Certification Faculty<span>Google 認證教職員</span></div>
+                    </div>
+
+                    <!-- 跨領域硬實力證照 -->
+                    <div class="cert-item">
+                        <img src="images/Safety_Cert.jpg" alt="營造業職安主管" onerror="this.src='https://placehold.co/400x300/e8eef2/3d352e?text=Occupational+Safety'">
+                        <div class="cert-name">營造業甲種職業安全衛生<br>業務主管<span>安衛管理與合規能力</span></div>
+                    </div>
+                    <div class="cert-item">
+                        <img src="images/工業電子.jpg" alt="工業電子丙級" onerror="this.src='https://placehold.co/400x300/e8eef2/3d352e?text=Industrial+Electronics'">
+                        <div class="cert-name">工業電子 丙級<span>電子工程基礎技術</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 數位專案實作 -->
+        <section id="works">
+            <h2>數位專案與實作</h2>
+            <div class="card">
+                <span class="timeline-title" style="display:block; margin-bottom: 5px;">1. 跨平台 MOS 自動化模擬考場系統</span>
+                <span class="timeline-subtitle" style="display:block; margin-bottom: 10px;">個人實作專案 | React 18, TypeScript, Node.js, Prompt Engineering</span>
+                <ul class="feature-list">
+                    <li><strong>專案目標：</strong>突破傳統紙本題庫限制，自主開發實境模擬系統以高效準備 MOS 專家級認證。</li>
+                    <li><strong>解決方案：</strong>運用 AI 輔助開發，僅花費 5 天即完成跨平台 (Web/Electron) 環境偵測與自動化佈署 MVP，成功繞過瀏覽器沙盒限制。</li>
+                    <li><strong>產出成果：</strong>成功應用此工具輔助自身高分獲證，體現「定義問題、尋求技術資源、快速落地」的問題解決能力。</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <span class="timeline-title" style="display:block; margin-bottom: 5px;">2. 資訊整合導覽平台 (健康資訊 / 防災準備)</span>
+                <span class="timeline-subtitle" style="display:block; margin-bottom: 10px;">AI 培訓實作專案 | Google AI Studio, Gemini API, Power BI, UI/UX</span>
+                <ul class="feature-list">
+                    <li><strong>專案內容：</strong>於數位辦公培訓期間，參與規劃並實作「健康資訊導覽平台」與「防災生活與居家準備資訊平台」。</li>
+                    <li><strong>執行細節：</strong>運用生成式 AI 進行資料蒐集、內容重構與提示詞 (Prompt) 設計，將龐雜的公共資訊轉化為易讀的視覺化介面。</li>
+                    <li><strong>核心貢獻：</strong>負責從需求規劃、內容整理、功能測試到成果展示的流程，展現數位專案管理與資訊處理的綜合能力。</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2026 黃翊珍 (HUANG YI-ZHEN). All Rights Reserved.
+    </footer>
+</div>
+</body>
+</html>
